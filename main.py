@@ -86,7 +86,7 @@ report.add_projs(info=raw.info, projs=ecg_projs, title='SSP ECG Projectors')
 for i, fig in enumerate(f):
     report.add_figure(fig, f'ECG Evoked {i}')
 
-report.save(os.path.join('out_report', 'report.html'), overwrite=True)
+report.save(os.path.join('out_report', 'report.html'), overwrite=True, verbose=False)
 
 # == CREATE PRODUCT.JSON ==
 product_items = []
